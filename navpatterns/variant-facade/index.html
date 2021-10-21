@@ -1,0 +1,414 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=description content>
+<link rel=icon href=/AL-Dev-Help/images/favicon.png type=image/png>
+<title>variant-facade.md :: BC AL Help</title>
+<link href=/AL-Dev-Help/css/nucleus.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/fontawesome-all.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/featherlight.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/perfect-scrollbar.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/auto-complete.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme-blue.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/variant.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/print.css?1634855005 rel=stylesheet media=print>
+<script src=/AL-Dev-Help/js/jquery.min.js?1634855005></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/AL-Dev-Help/navpatterns/variant-facade/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=/AL-Dev-Help/ style="color:#f5f5f5;font-family:novacento sans wide,helvetica,tahoma,geneva,arial,sans-serif;font-size:30px;font-weight:700;margin-top:-2px">
+BC AL Help . dev
+</a>
+<i style=color:#f5f5f5>Code is Poetry</i>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script src=/AL-Dev-Help/js/lunr.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/auto-complete.js?1634855005></script>
+<script>var index_url="/AL-Dev-Help/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
+<script src=/AL-Dev-Help/js/search.js?1634855005></script>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/AL-Dev-Help/welcome/ title=Welcome class=dd-item><a href=/AL-Dev-Help/welcome/><b><i class="fas fa-home"></i> </b>Welcome</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/bcpatterns/ title=BCPatterns class=dd-item><a href=/AL-Dev-Help/bcpatterns/><b><i class="fas fa-clone"></i> </b>BCPatterns</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/bcbestpractices/ title=BCBestPractices class=dd-item><a href=/AL-Dev-Help/bcbestpractices/><b><i class="fas fa-medal"></i> </b>BCBestPractices</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/ title=NAVPatterns class="dd-item parent"><a href=/AL-Dev-Help/navpatterns/><b><i class="fas fa-save"></i> </b>NAVPatterns</a><ul>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/ title=1-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/>1-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-sensitive-data-encapsulation/ title=1-sensitive-data-encapsulation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/1-sensitive-data-encapsulation/>1-sensitive-data-encapsulation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/2-anti-patterns/ title=2-anti-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/2-anti-patterns/>2-anti-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/2-data-encryption/ title=2-data-encryption.md class=dd-item><a href=/AL-Dev-Help/navpatterns/2-data-encryption/>2-data-encryption.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/3-cal-coding-guidelines/ title=3-cal-coding-guidelines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/3-cal-coding-guidelines/>3-cal-coding-guidelines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/3-single-point-of-access/ title=3-single-point-of-access.md class=dd-item><a href=/AL-Dev-Help/navpatterns/3-single-point-of-access/>3-single-point-of-access.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/4-get-involved/ title=4-get-involved.md class=dd-item><a href=/AL-Dev-Help/navpatterns/4-get-involved/>4-get-involved.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/4-masked-text/ title=4-masked-text.md class=dd-item><a href=/AL-Dev-Help/navpatterns/4-masked-text/>4-masked-text.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/5-ssl-in-nav/ title=5-ssl-in-nav.md class=dd-item><a href=/AL-Dev-Help/navpatterns/5-ssl-in-nav/>5-ssl-in-nav.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/actions-images/ title=actions-images.md class=dd-item><a href=/AL-Dev-Help/navpatterns/actions-images/>actions-images.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/activity-log/ title=activity-log.md class=dd-item><a href=/AL-Dev-Help/navpatterns/activity-log/>activity-log.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/argument-table/ title=argument-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/argument-table/>argument-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/begin-as-an-afterword/ title=begin-as-an-afterword.md class=dd-item><a href=/AL-Dev-Help/navpatterns/begin-as-an-afterword/>begin-as-an-afterword.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/begin-end/ title=begin-end.md class=dd-item><a href=/AL-Dev-Help/navpatterns/begin-end/>begin-end.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/binary-operator-line-start/ title=binary-operator-line-start.md class=dd-item><a href=/AL-Dev-Help/navpatterns/binary-operator-line-start/>binary-operator-line-start.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/blank-lines/ title=blank-lines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/blank-lines/>blank-lines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/blocked-entity/ title=blocked-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/blocked-entity/>blocked-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/by-reference-parameters/ title=by-reference-parameters.md class=dd-item><a href=/AL-Dev-Help/navpatterns/by-reference-parameters/>by-reference-parameters.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cached-web-service-calls/ title=cached-web-service-calls.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cached-web-service-calls/>cached-web-service-calls.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/captionml-for-system-tables/ title=captionml-for-system-tables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/captionml-for-system-tables/>captionml-for-system-tables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/case-actions/ title=case-actions.md class=dd-item><a href=/AL-Dev-Help/navpatterns/case-actions/>case-actions.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/class-coupling/ title=class-coupling.md class=dd-item><a href=/AL-Dev-Help/navpatterns/class-coupling/>class-coupling.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/code-of-conduct/ title=code-of-conduct.md class=dd-item><a href=/AL-Dev-Help/navpatterns/code-of-conduct/>code-of-conduct.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/colon-usage-in-case/ title=colon-usage-in-case.md class=dd-item><a href=/AL-Dev-Help/navpatterns/colon-usage-in-case/>colon-usage-in-case.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/comments-curly-brackets/ title=comments-curly-brackets.md class=dd-item><a href=/AL-Dev-Help/navpatterns/comments-curly-brackets/>comments-curly-brackets.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/comments-spacing/ title=comments-spacing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/comments-spacing/>comments-spacing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/conditional-cascading-update/ title=conditional-cascading-update.md class=dd-item><a href=/AL-Dev-Help/navpatterns/conditional-cascading-update/>conditional-cascading-update.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/confirm/ title=confirm.md class=dd-item><a href=/AL-Dev-Help/navpatterns/confirm/>confirm.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/copy-document/ title=copy-document.md class=dd-item><a href=/AL-Dev-Help/navpatterns/copy-document/>copy-document.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/create-data-from-templates/ title=create-data-from-templates.md class=dd-item><a href=/AL-Dev-Help/navpatterns/create-data-from-templates/>create-data-from-templates.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/create-urls-to-nav-clients/ title=create-urls-to-nav-clients.md class=dd-item><a href=/AL-Dev-Help/navpatterns/create-urls-to-nav-clients/>create-urls-to-nav-clients.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/creating-custom-charts/ title=creating-custom-charts.md class=dd-item><a href=/AL-Dev-Help/navpatterns/creating-custom-charts/>creating-custom-charts.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cross-session-events/ title=cross-session-events.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cross-session-events/>cross-session-events.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cue-table/ title=cue-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cue-table/>cue-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/currently-active-record/ title=currently-active-record.md class=dd-item><a href=/AL-Dev-Help/navpatterns/currently-active-record/>currently-active-record.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cyclomatic-complexity/ title=cyclomatic-complexity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cyclomatic-complexity/>cyclomatic-complexity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/data-driven-blocked-entity/ title=data-driven-blocked-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/data-driven-blocked-entity/>data-driven-blocked-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/data-migration-facade/ title=data-migration-facade.md class=dd-item><a href=/AL-Dev-Help/navpatterns/data-migration-facade/>data-migration-facade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/design/ title=design.md class=dd-item><a href=/AL-Dev-Help/navpatterns/design/>design.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/discovery-event/ title=discovery-event.md class=dd-item><a href=/AL-Dev-Help/navpatterns/discovery-event/>discovery-event.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/document/ title=document.md class=dd-item><a href=/AL-Dev-Help/navpatterns/document/>document.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/easy-update-of-setup-or-supplementary-information/ title=easy-update-of-setup-or-supplementary-information.md class=dd-item><a href=/AL-Dev-Help/navpatterns/easy-update-of-setup-or-supplementary-information/>easy-update-of-setup-or-supplementary-information.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/encapsulate-local-functionality/ title=encapsulate-local-functionality.md class=dd-item><a href=/AL-Dev-Help/navpatterns/encapsulate-local-functionality/>encapsulate-local-functionality.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/end-else-pair/ title=end-else-pair.md class=dd-item><a href=/AL-Dev-Help/navpatterns/end-else-pair/>end-else-pair.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/error-message-processing/ title=error-message-processing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/error-message-processing/>error-message-processing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/extending-the-role-center-headlines/ title=extending-the-role-center-headlines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/extending-the-role-center-headlines/>extending-the-role-center-headlines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/feature-localization-for-data-structures/ title=feature-localization-for-data-structures.md class=dd-item><a href=/AL-Dev-Help/navpatterns/feature-localization-for-data-structures/>feature-localization-for-data-structures.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/fieldcaption-and-tablecaption/ title=fieldcaption-and-tablecaption.md class=dd-item><a href=/AL-Dev-Help/navpatterns/fieldcaption-and-tablecaption/>fieldcaption-and-tablecaption.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/fielderror/ title=fielderror.md class=dd-item><a href=/AL-Dev-Help/navpatterns/fielderror/>fielderror.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/findset-findfirst-findlast/ title=findset-findfirst-findlast.md class=dd-item><a href=/AL-Dev-Help/navpatterns/findset-findfirst-findlast/>findset-findfirst-findlast.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/global-text-constants/ title=global-text-constants.md class=dd-item><a href=/AL-Dev-Help/navpatterns/global-text-constants/>global-text-constants.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/hooks/ title=hooks.md class=dd-item><a href=/AL-Dev-Help/navpatterns/hooks/>hooks.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/implementation-of-surrogate-keys-using-autoincrement-pattern/ title=implementation-of-surrogate-keys-using-autoincrement-pattern.md class=dd-item><a href=/AL-Dev-Help/navpatterns/implementation-of-surrogate-keys-using-autoincrement-pattern/>implementation-of-surrogate-keys-using-autoincrement-pattern.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/in-context-notifications/ title=in-context-notifications.md class=dd-item><a href=/AL-Dev-Help/navpatterns/in-context-notifications/>in-context-notifications.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/indentation/ title=indentation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/indentation/>indentation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/initialized-variables/ title=initialized-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/initialized-variables/>initialized-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/instructions-in-the-ui/ title=instructions-in-the-ui.md class=dd-item><a href=/AL-Dev-Help/navpatterns/instructions-in-the-ui/>instructions-in-the-ui.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/integration-of-addresses/ title=integration-of-addresses.md class=dd-item><a href=/AL-Dev-Help/navpatterns/integration-of-addresses/>integration-of-addresses.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/internally-used-dot-net-types/ title=internally-used-dot-net-types.md class=dd-item><a href=/AL-Dev-Help/navpatterns/internally-used-dot-net-types/>internally-used-dot-net-types.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/internationalization/ title=internationalization.md class=dd-item><a href=/AL-Dev-Help/navpatterns/internationalization/>internationalization.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/journal-error-processing/ title=journal-error-processing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/journal-error-processing/>journal-error-processing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/journal-template-batch-line/ title=journal-template-batch-line.md class=dd-item><a href=/AL-Dev-Help/navpatterns/journal-template-batch-line/>journal-template-batch-line.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/keyword-pairs-indentation/ title=keyword-pairs-indentation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/keyword-pairs-indentation/>keyword-pairs-indentation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/line-start-keywords/ title=line-start-keywords.md class=dd-item><a href=/AL-Dev-Help/navpatterns/line-start-keywords/>line-start-keywords.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/localizability/ title=localizability.md class=dd-item><a href=/AL-Dev-Help/navpatterns/localizability/>localizability.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/lonely-repeat/ title=lonely-repeat.md class=dd-item><a href=/AL-Dev-Help/navpatterns/lonely-repeat/>lonely-repeat.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/maintainability-index/ title=maintainability-index.md class=dd-item><a href=/AL-Dev-Help/navpatterns/maintainability-index/>maintainability-index.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/master-data/ title=master-data.md class=dd-item><a href=/AL-Dev-Help/navpatterns/master-data/>master-data.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/message-and-error/ title=message-and-error.md class=dd-item><a href=/AL-Dev-Help/navpatterns/message-and-error/>message-and-error.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multi-file-download/ title=multi-file-download.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multi-file-download/>multi-file-download.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multi-page-list/ title=multi-page-list.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multi-page-list/>multi-page-list.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multilanguage-application-data/ title=multilanguage-application-data.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multilanguage-application-data/>multilanguage-application-data.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/named-invocations/ title=named-invocations.md class=dd-item><a href=/AL-Dev-Help/navpatterns/named-invocations/>named-invocations.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/nav-upgrade/ title=nav-upgrade.md class=dd-item><a href=/AL-Dev-Help/navpatterns/nav-upgrade/>nav-upgrade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/nested-withs/ title=nested-withs.md class=dd-item><a href=/AL-Dev-Help/navpatterns/nested-withs/>nested-withs.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/net-exception-handling-in-cal/ title=net-exception-handling-in-cal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/net-exception-handling-in-cal/>net-exception-handling-in-cal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/no-series/ title=no-series.md class=dd-item><a href=/AL-Dev-Help/navpatterns/no-series/>no-series.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/notification-lifecycle-management-pattern/ title=notification-lifecycle-management-pattern.md class=dd-item><a href=/AL-Dev-Help/navpatterns/notification-lifecycle-management-pattern/>notification-lifecycle-management-pattern.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/notifications/ title=notifications.md class=dd-item><a href=/AL-Dev-Help/navpatterns/notifications/>notifications.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/observer/ title=observer.md class=dd-item><a href=/AL-Dev-Help/navpatterns/observer/>observer.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/one-statement-per-line/ title=one-statement-per-line.md class=dd-item><a href=/AL-Dev-Help/navpatterns/one-statement-per-line/>one-statement-per-line.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/parameter-placeholders/ title=parameter-placeholders.md class=dd-item><a href=/AL-Dev-Help/navpatterns/parameter-placeholders/>parameter-placeholders.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/patterns-authors/ title=patterns-authors.md class=dd-item><a href=/AL-Dev-Help/navpatterns/patterns-authors/>patterns-authors.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/posting-routine-select-behavior/ title=posting-routine-select-behavior.md class=dd-item><a href=/AL-Dev-Help/navpatterns/posting-routine-select-behavior/>posting-routine-select-behavior.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/product-name/ title=product-name.md class=dd-item><a href=/AL-Dev-Help/navpatterns/product-name/>product-name.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/queries/ title=queries.md class=dd-item><a href=/AL-Dev-Help/navpatterns/queries/>queries.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/read-once-initialization-and-validation/ title=read-once-initialization-and-validation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/read-once-initialization-and-validation/>read-once-initialization-and-validation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/readability/ title=readability.md class=dd-item><a href=/AL-Dev-Help/navpatterns/readability/>readability.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/related-links/ title=related-links.md class=dd-item><a href=/AL-Dev-Help/navpatterns/related-links/>related-links.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/released-entity/ title=released-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/released-entity/>released-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/report-selection/ title=report-selection.md class=dd-item><a href=/AL-Dev-Help/navpatterns/report-selection/>report-selection.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/reusable-bugs/ title=reusable-bugs.md class=dd-item><a href=/AL-Dev-Help/navpatterns/reusable-bugs/>reusable-bugs.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/security/ title=security.md class=dd-item><a href=/AL-Dev-Help/navpatterns/security/>security.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/select-distinct-with-queries/ title=select-distinct-with-queries.md class=dd-item><a href=/AL-Dev-Help/navpatterns/select-distinct-with-queries/>select-distinct-with-queries.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/separate-if-and-else/ title=separate-if-and-else.md class=dd-item><a href=/AL-Dev-Help/navpatterns/separate-if-and-else/>separate-if-and-else.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/setup-specificity-fallback/ title=setup-specificity-fallback.md class=dd-item><a href=/AL-Dev-Help/navpatterns/setup-specificity-fallback/>setup-specificity-fallback.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/setup-table/ title=setup-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/setup-table/>setup-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/silent-file-upload-and-download/ title=silent-file-upload-and-download.md class=dd-item><a href=/AL-Dev-Help/navpatterns/silent-file-upload-and-download/>silent-file-upload-and-download.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton/ title=singleton.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton/>singleton.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton-codeunit/ title=singleton-codeunit.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton-codeunit/>singleton-codeunit.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton-table/ title=singleton-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton-table/>singleton-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-binary-operators/ title=spacing-binary-operators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-binary-operators/>spacing-binary-operators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-brackets-and/ title=spacing-brackets-and.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-brackets-and/>spacing-brackets-and.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-unary-operators/ title=spacing-unary-operators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-unary-operators/>spacing-unary-operators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/standard-journal/ title=standard-journal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/standard-journal/>standard-journal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/static-object-invocation/ title=static-object-invocation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/static-object-invocation/>static-object-invocation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/suggested-abbreviations/ title=suggested-abbreviations.md class=dd-item><a href=/AL-Dev-Help/navpatterns/suggested-abbreviations/>suggested-abbreviations.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/template-for-writing-nav-design-patterns/ title=template-for-writing-nav-design-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/template-for-writing-nav-design-patterns/>template-for-writing-nav-design-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/temporary-dataset-report/ title=temporary-dataset-report.md class=dd-item><a href=/AL-Dev-Help/navpatterns/temporary-dataset-report/>temporary-dataset-report.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/temporary-variable-naming/ title=temporary-variable-naming.md class=dd-item><a href=/AL-Dev-Help/navpatterns/temporary-variable-naming/>temporary-variable-naming.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/textconst-suffixes/ title=textconst-suffixes.md class=dd-item><a href=/AL-Dev-Help/navpatterns/textconst-suffixes/>textconst-suffixes.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/totals-and-discounts-on-subpages-sales-and-purchases/ title=totals-and-discounts-on-subpages-sales-and-purchases.md class=dd-item><a href=/AL-Dev-Help/navpatterns/totals-and-discounts-on-subpages-sales-and-purchases/>totals-and-discounts-on-subpages-sales-and-purchases.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/transfer-custom-fields/ title=transfer-custom-fields.md class=dd-item><a href=/AL-Dev-Help/navpatterns/transfer-custom-fields/>transfer-custom-fields.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/tryfunction-net-exception-handling-in-cal/ title=tryfunction-net-exception-handling-in-cal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/tryfunction-net-exception-handling-in-cal/>tryfunction-net-exception-handling-in-cal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unary-operator-line-end/ title=unary-operator-line-end.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unary-operator-line-end/>unary-operator-line-end.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-compound-parenthesis/ title=unnecessary-compound-parenthesis.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-compound-parenthesis/>unnecessary-compound-parenthesis.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-else/ title=unnecessary-else.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-else/>unnecessary-else.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-function-parenthesis/ title=unnecessary-function-parenthesis.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-function-parenthesis/>unnecessary-function-parenthesis.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-separators/ title=unnecessary-separators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-separators/>unnecessary-separators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-truefalse/ title=unnecessary-truefalse.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-truefalse/>unnecessary-truefalse.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unreachable-code/ title=unreachable-code.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unreachable-code/>unreachable-code.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unused-initialized-variables/ title=unused-initialized-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unused-initialized-variables/>unused-initialized-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unused-variables/ title=unused-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unused-variables/>unused-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-queries-to-detect-duplicate-records/ title=use-queries-to-detect-duplicate-records.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-queries-to-detect-duplicate-records/>use-queries-to-detect-duplicate-records.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-queries-to-replace-nested-loops/ title=use-queries-to-replace-nested-loops.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-queries-to-replace-nested-loops/>use-queries-to-replace-nested-loops.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-text-constants/ title=use-text-constants.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-text-constants/>use-text-constants.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/using-calcdate/ title=using-calcdate.md class=dd-item><a href=/AL-Dev-Help/navpatterns/using-calcdate/>using-calcdate.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/using-optioncaptionml/ title=using-optioncaptionml.md class=dd-item><a href=/AL-Dev-Help/navpatterns/using-optioncaptionml/>using-optioncaptionml.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/ux/ title=ux.md class=dd-item><a href=/AL-Dev-Help/navpatterns/ux/>ux.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-already-scoped/ title=variable-already-scoped.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-already-scoped/>variable-already-scoped.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-capacity-mismatch/ title=variable-capacity-mismatch.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-capacity-mismatch/>variable-capacity-mismatch.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-naming/ title=variable-naming.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-naming/>variable-naming.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variables-declarations-order/ title=variables-declarations-order.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variables-declarations-order/>variables-declarations-order.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variant-facade/ title=variant-facade.md class="dd-item active"><a href=/AL-Dev-Help/navpatterns/variant-facade/>variant-facade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/with-scope-name-collision/ title=with-scope-name-collision.md class=dd-item><a href=/AL-Dev-Help/navpatterns/with-scope-name-collision/>with-scope-name-collision.md</a></li></ul></li>
+</ul>
+<div id=shortcuts>
+<div class=nav-title>More</div>
+<ul>
+<li><a class=padding href=https://discord.gg/4wbfNv3><i class="fab fa-discord"></i> BC Discord</a></li>
+<li><a class=padding href=https://github.com/BC-Design-Patterns/AL-Dev-Help><i class="fab fa-github"></i> GitHub repo</a></li>
+</ul>
+</div>
+<div id=footer>
+<p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p>
+</div>
+</div>
+</nav>
+<div id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div id=top-bar>
+<div id=breadcrumbs>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
+<meta itemprop=itemListOrder content="Descending">
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/AL-Dev-Help/><span itemprop=name>Home</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/AL-Dev-Help/navpatterns/><span itemprop=name>NAVPatterns</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/AL-Dev-Help/navpatterns/variant-facade/ aria-disabled=true><span itemprop=name>variant-facade.md</span></a></li>
+</ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#signature>Signature</a></li>
+<li><a href=#casting-to-a-record-ref>Casting to a record ref</a></li>
+<li><a href=#using-the-variant>Using the variant</a></li>
+<li><a href=#table-specific-code>Table specific code</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<main id=body-inner>
+<h1>variant-facade.md</h1>
+<h1 id=variant-façade>Variant Façade</h1>
+<p>By Nikola Kukrika, Waldo and Gary Winter</p>
+<h1 id=abstract>Abstract</h1>
+<p>The Variant façade provides a single interface that can take any Record, RecordRef or RecordID as an argument. With this pattern the code is encapsulated within the single object, with clear separation between common and table specific code.</p>
+<p><a href=picture1.png><img src=picture1.png alt=" "></a></p>
+<hr>
+<h1 id=problem>Problem</h1>
+<p>Since NAV is strongly typed, developers often need to duplicate functionality in order to add support for a new table. The developer would typically start by duplicating the function, changing the record type and implement slight modifications to the code if needed.</p>
+<p>The problem with this approach is that code duplication is one of the worst things in software development &ndash; it makes code harder to understand, maintain, extend and test.</p>
+<p>One of the good examples of this approach and the resulting duplication is codeunit 229, Document-Print:</p>
+<p><a href=Picture2.png><img src=Picture2.png alt=" "></a></p>
+<p><a href=Picture3.png><img src=Picture3.png alt=" "></a></p>
+<p>After reading the code from the two code snippets above, it is very hard to see the differences. The most of the code is duplicated (more than 95%). To make the matters worse the codeunit itself has 10 additional methods that are used to print different records, some are similar to the ones above while others are completely different.</p>
+<p><a href=Picture4.png><img src=Picture4.png alt=" "></a></p>
+<p><a href=Picture5.png><img src=Picture5.png alt=" "></a></p>
+<p>Figure: the entire code of the codeunit 229, Document Print, 12 methods</p>
+<p><a href=Picture6.png><img src=Picture6.png alt=" "></a></p>
+<p>Figure: Visualization how it would look like with 20 methods</p>
+<p>Problems arising from this way of implementing code are:</p>
+<p><strong>Understanding of the code</strong> is very hard, since the developer needs to read blocks of code that look similar and try to understand what exactly the differences are.</p>
+<p><strong>Maintaining and Extending</strong> the code is hard, since every fix or a new behavior that needs to be implemented multiple times (in this case probably 12 times).</p>
+<p><strong>Upgradability is low</strong> &ndash; each conflict needs to be resolved many times. The hook pattern is hard to implement since it needs to be implemented for every function. Evening suffers the same problem - cannot use the evening easily since it needs to be raised from multiple places in the code.</p>
+<p><strong>Testing the code</strong> is hard since the tests need to be replicated.</p>
+<p>**Constant cost of adding support for new tables **&ndash; when the new record type needs to be supported, it has a constant cost. Adding a support for a new record will increase the Maintenance tax and it will make the code harder to understand and extend. ****</p>
+<p>**Conclusion **- <strong>If the functionality needs to be used for many records the approach of duplicating the functions should be avoided.</strong></p>
+<h1 id=solution>Solution</h1>
+<p>The Variant façade pattern provides a single interface that would not need to be changed in the future. It will be able to take any record as a parameter. Common code should be kept separately from record specific code and both must be very visible so the developers can easily see what the differences are.</p>
+<p>The Key components of the pattern are:</p>
+<h2 id=signature>Signature</h2>
+<p>Instead of hardcoding a record type a variant is used as an argument. A Variant Façade function can receive three types of data: Record, RecordID, or RecordRef. This way, it can be reused anywhere in the product and the code will still work.</p>
+<p>A good practice is to combine this pattern with the Argument Table pattern to make sure that the signature does not change (Additional parameters can be added to the argument table without impacting existing code.). If the Argument Table is not needed, it should not be placed in the signature - it is always possible to add it at a latter point and have two public functions (one with and one without arguments).</p>
+<p>Example - For codeunit 229, Document-Print all of the public methods can be simply replaced with a single public method like this:</p>
+<p>With this approach the façade function can serve all of the record types and will not need to change in the future.</p>
+<h2 id=casting-to-a-record-ref>Casting to a record ref</h2>
+<p>After the signature it is necessary to decide if the function will support passing of the Record ID and the RecordRef. Code tends to be easier to understand and maintain if only the records are passed as the arguments, however in some cases it is needed to support the other two types.</p>
+<ul>
+<li><strong>Support for Record, Record ID and RecordRef:</strong></li>
+</ul>
+<p>After the signature if the function supports passing of the RecordID or RecordRef as a parameter it is a good practice to cast them to a RecordRef. Codeunit Data Type Management is used to do this:</p>
+<p>DataTypeManagement.GetRecordRef(RecRelatedVariant,RecordRef)</p>
+<ul>
+<li><strong>Support Records only</strong> - If the function supports only passing in the record, it is a good practice to check if the variant is a record:</li>
+</ul>
+<p>IF NOT RecordVariant.ISRECORD THEN</p>
+<p>ERROR(NotARecordErr);</p>
+<h2 id=using-the-variant>Using the variant</h2>
+<p>The variant can be passed instead of record when calling the Page.RUN, Codeunit.RUN or Report.RUN statically:</p>
+<p>For example:</p>
+<p>Page.RUN(PageID,Variant);</p>
+<p>Codeunit.RUN(CodeunitID,Variant);</p>
+<p>Report.RUN(ReportID,Variant);</p>
+<p>These calls are identical to using an actual instance of the record, since the variant will be casted to the record automatically, with all filters, markings and values preserved.</p>
+<hr>
+<p>In case the variant was casted to the RecordRef (by using DataTypeManagement.GetRecordRef(RecRelatedVariant,RecordRef)), it is still possible to invoke the functions statically.</p>
+<p>The RecordRef simply needs to be casted into a variant and passed as a parameter, for example:</p>
+<p>VariantArgument := RecordRef;</p>
+<p>Page.RUN(PageID,VariantArgument);</p>
+<p>Variant can always casted back to the original record in the table specific code, exact process is described below.</p>
+<h2 id=table-specific-code>Table specific code</h2>
+<p>To do table-specific processing, it is necessary to get the RecordRef first, since NUMBER parameter will tell us which table it is. In the table-specific code, it is possible to cast the variant back to the original record type, so data is accessible and it is possible to invoke functions.</p>
+<p>To do this, the best practice is to use the COPY function to preserve filters:</p>
+<p>SalesHeader.COPY(RecordVariant);</p>
+<p>Assigning directly such as SalesHeader := RecordVariant, is possible, however all filters will be lost.</p>
+<p>Example of table specific code:</p>
+<p>CASE RecordRef.NUMBER OF</p>
+<p>DATABASE::&ldquo;Sales Header&rdquo;:</p>
+<p>BEGIN</p>
+<p>SalesHeader.COPY(RecordVariant);</p>
+<p>SalesHeader.PrintDocument;</p>
+<p>END;</p>
+<p>DATABASE::&ldquo;Purchase Header&rdquo;:</p>
+<p>BEGIN</p>
+<p>PurchaseHeader.COPY(RecordVariant)</p>
+<p>&mldr;</p>
+<p>END;</p>
+<p>&mldr;.</p>
+<p>It is a good practice to try to avoid the table specific code if possible.</p>
+<p>One of the issues with table specific code is that the CASE statement can easily explode when large number of records are supported.</p>
+<p>There are two possible solutions:</p>
+<ol>
+<li>Move the calculations outside of the façade code unit and pass it in as part of the argument table.</li>
+</ol>
+<p>For example, instead of having a case like this within DocumentPrint codeunit:</p>
+<p>CASE RecordRef.NUMBER OF</p>
+<p>DATABASE::&ldquo;Sales Header&rdquo;:</p>
+<p>BEGIN</p>
+<p>SalesHeader.COPY(RecordVariant);</p>
+<p>CASE SalesHeader.&ldquo;Document Type&rdquo; OF</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Quote:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Quote&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Blanket Order&rdquo;:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Blanket&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Order:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Order&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Return Order&rdquo;:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Return&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Invoice:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Invoice&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Credit Memo&rdquo;:</p>
+<p>ReportSelections.SETRANGE(Usage,ReportSelections.Usage::&ldquo;S.Cr.Memo&rdquo;);</p>
+<p>END;</p>
+<p>If the ReportSelections.Usage is simply passed into the function from outside, then the case statement is not needed at all. For example:</p>
+<p>PrintDocumentArguments.&ldquo;Report Selection Usage&rdquo; := SalesHeader.GetReportSelectionUsage;</p>
+<p>DocumentPrint.PrintDocument(SalesHeader,PrintDocumentArguments);</p>
+<p>Where GetReportSelection usage is coded like this:</p>
+<p>CASE SalesHeader.&ldquo;Document Type&rdquo; OF</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Quote:</p>
+<p>EXIT (ReportSelections.Usage::&ldquo;S.Quote&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Blanket Order&rdquo;:</p>
+<p>EXIT(ReportSelections.Usage::&ldquo;S.Blanket&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Order:</p>
+<p>EXIT(ReportSelections.Usage::&ldquo;S.Order&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Return Order&rdquo;:</p>
+<p>EXIT(ReportSelections.Usage::&ldquo;S.Return&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::Invoice:</p>
+<p>EXIT(ReportSelections.Usage::&ldquo;S.Invoice&rdquo;);</p>
+<p>SalesHeader.&ldquo;Document Type&rdquo;::&ldquo;Credit Memo&rdquo;:</p>
+<p>EXIT(ReportSelections.Usage::&ldquo;S.Cr.Memo&rdquo;);</p>
+<p>This way the code is much more reusable and simpler to read.</p>
+<ol>
+<li>Use Rules Table to replace the code with data-driven approach.</li>
+</ol>
+<p>Setup table would contain the list of the reports and their usages. Based on Table ID and usage it is possible to set filters on the setup table and run the object ID from the result.</p>
+<p>For example:</p>
+<p>ReportSelectionSetup.SETRANGE(&ldquo;Table ID&rdquo;, RecordRef.NUBMER);</p>
+<p>ReportSelectionSetup.SETRANGE(&ldquo;Usage Type&rdquo;, RecordRef.FieldValue(ArgumentTable.&ldquo;Usage Type&rdquo;);</p>
+<p>ReportSelectionSetup.FINDFIRST;</p>
+<p>REPORT.RUN(ReportSelectionSetup.&ldquo;Report ID&rdquo;,VariantRecord);</p>
+<hr>
+<h1 id=example>Example</h1>
+<p>The following code illustrates how the Variant Façade pattern can be used to implement the Document-Print Codeunit.</p>
+<p><a href=Picture7.png><img src=Picture7.png alt=" "></a></p>
+<p><a href=Picture8.png><img src=Picture8.png alt=" "></a></p>
+<p>From the PrintDocument signature it is clear that it will not need to be changed in the future.</p>
+<p>Code duplication is avoided, specific code is isolated in the PrepareRecord function, there is clear extension point to add support for new records in the future. Since code is not duplicated and there is a single flow through the method, inserting hooks and events in the future will be straightforward.</p>
+<p>When adding the support for new records in most cases it is not need to change any code within the method, thus the cost of extending the usage is minimal.</p>
+<p>Note - PrepareRecord function is placed for the illustrational purposes. An improvement would be to move all of the code from the PrepareRecord function before calling the function. So for the SalesHeader and PurchaseHeaders discounts should be calculated before invoking the function. For passing of the argument it should be one of the fields in the Argument Table, thus the entire specific code would be eliminated.</p>
+<h1 id=consequences>Consequences</h1>
+<ul>
+<li>Not needed if the functionality needs to support few tables. Don&rsquo;t use it as a hammer</li>
+<li>Strongly typing the records has it benefits since it is easier to find usages, errors will be visible at the compilation time.</li>
+<li>Code becomes harder to debug within the variant façade</li>
+<li>Be careful with filters and marks, if the function needs to support multiple records. Test these cases thoughtfully because with bad placement of code the filters can easily be lost.</li>
+<li>Case statements can explode if there are too many tables that require specific processing. Then it is a must to find a way to keep the number of options in the CASE statement low. The Rules Table pattern and adding specifics to the Argument Table before invoking the code could help with keep the list shorter.</li>
+</ul>
+<h1 id=nav-usages>NAV usages</h1>
+<ul>
+<li>Codeunit 452 - Report Distribution Management</li>
+<li>Codeunit 700 - Page Management</li>
+<li>Codeunit 701 - Data Type Management</li>
+<li>Codeunit 1268 - Export Launcher</li>
+<li>Codeunit 1410 - Doc. Exch. Service Mgt.</li>
+<li>Codeunit 1501 - Workflow Management</li>
+<li>Codeunit 1521 - Workflow Response Handling</li>
+<li>Codeunit 1531 - Workflow Change Rec Mgt.</li>
+<li>Codeunit 1535 - Approvals Mgmt.</li>
+</ul>
+<h1 id=related-topics>Related Topics</h1>
+<p>OO Facade <a href=https://en.wikipedia.org/wiki/Facade_pattern>https://en.wikipedia.org/wiki/Facade_pattern</a></p>
+<p>Argument Table pattern - <a href=/nav/w/designpatterns/245.argument-table-pattern>https://community.dynamics.com/nav/w/designpatterns/245.argument-table-pattern</a></p>
+<p>Rules Table pattern</p>
+<p>&lt; &ndash;[if supportAnnotations]&ndash;>
+&lt; &ndash;[endif]&ndash;></p>
+<footer class=footline>
+</footer>
+</main>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/AL-Dev-Help/navpatterns/variables-declarations-order/ title=variables-declarations-order.md><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/AL-Dev-Help/navpatterns/with-scope-name-collision/ title=with-scope-name-collision.md><i class="fa fa-chevron-right"></i></a>
+</div>
+</div>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/AL-Dev-Help/js/clipboard.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.jquery.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/jquery.svg.pan.zoom.js?1634855005></script>
+<script src=/AL-Dev-Help/js/featherlight.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/modernizr.custom-3.6.0.js?1634855005></script>
+<script src=/AL-Dev-Help/js/mermaid.min.js?1634855005></script>
+<script>typeof mermaid!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
+<script src=/AL-Dev-Help/js/relearn.js?1634855005></script>
+</body>
+</html>

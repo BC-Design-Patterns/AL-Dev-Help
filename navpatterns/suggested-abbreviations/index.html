@@ -1,0 +1,949 @@
+<!doctype html><html lang=en class="js csstransforms3d">
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=generator content="Hugo 0.88.1">
+<meta name=description content>
+<link rel=icon href=/AL-Dev-Help/images/favicon.png type=image/png>
+<title>suggested-abbreviations.md :: BC AL Help</title>
+<link href=/AL-Dev-Help/css/nucleus.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/fontawesome-all.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/featherlight.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/perfect-scrollbar.min.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/auto-complete.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme-blue.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/variant.css?1634855005 rel=stylesheet>
+<link href=/AL-Dev-Help/css/print.css?1634855005 rel=stylesheet media=print>
+<script src=/AL-Dev-Help/js/jquery.min.js?1634855005></script>
+<style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
+</head>
+<body data-url=/AL-Dev-Help/navpatterns/suggested-abbreviations/>
+<nav id=sidebar>
+<div id=header-wrapper>
+<div id=header>
+<a id=logo href=/AL-Dev-Help/ style="color:#f5f5f5;font-family:novacento sans wide,helvetica,tahoma,geneva,arial,sans-serif;font-size:30px;font-weight:700;margin-top:-2px">
+BC AL Help . dev
+</a>
+<i style=color:#f5f5f5>Code is Poetry</i>
+</div>
+<div class=searchbox>
+<label for=search-by><i class="fas fa-search"></i></label>
+<input data-search-input id=search-by type=search placeholder=Search...>
+<span data-search-clear><i class="fas fa-times"></i></span>
+</div>
+<script src=/AL-Dev-Help/js/lunr.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/auto-complete.js?1634855005></script>
+<script>var index_url="/AL-Dev-Help/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
+<script src=/AL-Dev-Help/js/search.js?1634855005></script>
+</div>
+<div class=highlightable>
+<ul class=topics>
+<li data-nav-id=/AL-Dev-Help/welcome/ title=Welcome class=dd-item><a href=/AL-Dev-Help/welcome/><b><i class="fas fa-home"></i> </b>Welcome</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/bcpatterns/ title=BCPatterns class=dd-item><a href=/AL-Dev-Help/bcpatterns/><b><i class="fas fa-clone"></i> </b>BCPatterns</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/bcbestpractices/ title=BCBestPractices class=dd-item><a href=/AL-Dev-Help/bcbestpractices/><b><i class="fas fa-medal"></i> </b>BCBestPractices</a><ul></ul></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/ title=NAVPatterns class="dd-item parent"><a href=/AL-Dev-Help/navpatterns/><b><i class="fas fa-save"></i> </b>NAVPatterns</a><ul>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/ title=1-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/>1-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-sensitive-data-encapsulation/ title=1-sensitive-data-encapsulation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/1-sensitive-data-encapsulation/>1-sensitive-data-encapsulation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/2-anti-patterns/ title=2-anti-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/2-anti-patterns/>2-anti-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/2-data-encryption/ title=2-data-encryption.md class=dd-item><a href=/AL-Dev-Help/navpatterns/2-data-encryption/>2-data-encryption.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/3-cal-coding-guidelines/ title=3-cal-coding-guidelines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/3-cal-coding-guidelines/>3-cal-coding-guidelines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/3-single-point-of-access/ title=3-single-point-of-access.md class=dd-item><a href=/AL-Dev-Help/navpatterns/3-single-point-of-access/>3-single-point-of-access.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/4-get-involved/ title=4-get-involved.md class=dd-item><a href=/AL-Dev-Help/navpatterns/4-get-involved/>4-get-involved.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/4-masked-text/ title=4-masked-text.md class=dd-item><a href=/AL-Dev-Help/navpatterns/4-masked-text/>4-masked-text.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/5-ssl-in-nav/ title=5-ssl-in-nav.md class=dd-item><a href=/AL-Dev-Help/navpatterns/5-ssl-in-nav/>5-ssl-in-nav.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/actions-images/ title=actions-images.md class=dd-item><a href=/AL-Dev-Help/navpatterns/actions-images/>actions-images.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/activity-log/ title=activity-log.md class=dd-item><a href=/AL-Dev-Help/navpatterns/activity-log/>activity-log.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/argument-table/ title=argument-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/argument-table/>argument-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/begin-as-an-afterword/ title=begin-as-an-afterword.md class=dd-item><a href=/AL-Dev-Help/navpatterns/begin-as-an-afterword/>begin-as-an-afterword.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/begin-end/ title=begin-end.md class=dd-item><a href=/AL-Dev-Help/navpatterns/begin-end/>begin-end.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/binary-operator-line-start/ title=binary-operator-line-start.md class=dd-item><a href=/AL-Dev-Help/navpatterns/binary-operator-line-start/>binary-operator-line-start.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/blank-lines/ title=blank-lines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/blank-lines/>blank-lines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/blocked-entity/ title=blocked-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/blocked-entity/>blocked-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/by-reference-parameters/ title=by-reference-parameters.md class=dd-item><a href=/AL-Dev-Help/navpatterns/by-reference-parameters/>by-reference-parameters.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cached-web-service-calls/ title=cached-web-service-calls.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cached-web-service-calls/>cached-web-service-calls.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/captionml-for-system-tables/ title=captionml-for-system-tables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/captionml-for-system-tables/>captionml-for-system-tables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/case-actions/ title=case-actions.md class=dd-item><a href=/AL-Dev-Help/navpatterns/case-actions/>case-actions.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/class-coupling/ title=class-coupling.md class=dd-item><a href=/AL-Dev-Help/navpatterns/class-coupling/>class-coupling.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/code-of-conduct/ title=code-of-conduct.md class=dd-item><a href=/AL-Dev-Help/navpatterns/code-of-conduct/>code-of-conduct.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/colon-usage-in-case/ title=colon-usage-in-case.md class=dd-item><a href=/AL-Dev-Help/navpatterns/colon-usage-in-case/>colon-usage-in-case.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/comments-curly-brackets/ title=comments-curly-brackets.md class=dd-item><a href=/AL-Dev-Help/navpatterns/comments-curly-brackets/>comments-curly-brackets.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/comments-spacing/ title=comments-spacing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/comments-spacing/>comments-spacing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/conditional-cascading-update/ title=conditional-cascading-update.md class=dd-item><a href=/AL-Dev-Help/navpatterns/conditional-cascading-update/>conditional-cascading-update.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/confirm/ title=confirm.md class=dd-item><a href=/AL-Dev-Help/navpatterns/confirm/>confirm.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/copy-document/ title=copy-document.md class=dd-item><a href=/AL-Dev-Help/navpatterns/copy-document/>copy-document.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/create-data-from-templates/ title=create-data-from-templates.md class=dd-item><a href=/AL-Dev-Help/navpatterns/create-data-from-templates/>create-data-from-templates.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/create-urls-to-nav-clients/ title=create-urls-to-nav-clients.md class=dd-item><a href=/AL-Dev-Help/navpatterns/create-urls-to-nav-clients/>create-urls-to-nav-clients.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/creating-custom-charts/ title=creating-custom-charts.md class=dd-item><a href=/AL-Dev-Help/navpatterns/creating-custom-charts/>creating-custom-charts.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cross-session-events/ title=cross-session-events.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cross-session-events/>cross-session-events.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cue-table/ title=cue-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cue-table/>cue-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/currently-active-record/ title=currently-active-record.md class=dd-item><a href=/AL-Dev-Help/navpatterns/currently-active-record/>currently-active-record.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/cyclomatic-complexity/ title=cyclomatic-complexity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/cyclomatic-complexity/>cyclomatic-complexity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/data-driven-blocked-entity/ title=data-driven-blocked-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/data-driven-blocked-entity/>data-driven-blocked-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/data-migration-facade/ title=data-migration-facade.md class=dd-item><a href=/AL-Dev-Help/navpatterns/data-migration-facade/>data-migration-facade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/design/ title=design.md class=dd-item><a href=/AL-Dev-Help/navpatterns/design/>design.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/discovery-event/ title=discovery-event.md class=dd-item><a href=/AL-Dev-Help/navpatterns/discovery-event/>discovery-event.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/document/ title=document.md class=dd-item><a href=/AL-Dev-Help/navpatterns/document/>document.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/easy-update-of-setup-or-supplementary-information/ title=easy-update-of-setup-or-supplementary-information.md class=dd-item><a href=/AL-Dev-Help/navpatterns/easy-update-of-setup-or-supplementary-information/>easy-update-of-setup-or-supplementary-information.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/encapsulate-local-functionality/ title=encapsulate-local-functionality.md class=dd-item><a href=/AL-Dev-Help/navpatterns/encapsulate-local-functionality/>encapsulate-local-functionality.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/end-else-pair/ title=end-else-pair.md class=dd-item><a href=/AL-Dev-Help/navpatterns/end-else-pair/>end-else-pair.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/error-message-processing/ title=error-message-processing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/error-message-processing/>error-message-processing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/extending-the-role-center-headlines/ title=extending-the-role-center-headlines.md class=dd-item><a href=/AL-Dev-Help/navpatterns/extending-the-role-center-headlines/>extending-the-role-center-headlines.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/feature-localization-for-data-structures/ title=feature-localization-for-data-structures.md class=dd-item><a href=/AL-Dev-Help/navpatterns/feature-localization-for-data-structures/>feature-localization-for-data-structures.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/fieldcaption-and-tablecaption/ title=fieldcaption-and-tablecaption.md class=dd-item><a href=/AL-Dev-Help/navpatterns/fieldcaption-and-tablecaption/>fieldcaption-and-tablecaption.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/fielderror/ title=fielderror.md class=dd-item><a href=/AL-Dev-Help/navpatterns/fielderror/>fielderror.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/findset-findfirst-findlast/ title=findset-findfirst-findlast.md class=dd-item><a href=/AL-Dev-Help/navpatterns/findset-findfirst-findlast/>findset-findfirst-findlast.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/global-text-constants/ title=global-text-constants.md class=dd-item><a href=/AL-Dev-Help/navpatterns/global-text-constants/>global-text-constants.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/hooks/ title=hooks.md class=dd-item><a href=/AL-Dev-Help/navpatterns/hooks/>hooks.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/implementation-of-surrogate-keys-using-autoincrement-pattern/ title=implementation-of-surrogate-keys-using-autoincrement-pattern.md class=dd-item><a href=/AL-Dev-Help/navpatterns/implementation-of-surrogate-keys-using-autoincrement-pattern/>implementation-of-surrogate-keys-using-autoincrement-pattern.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/in-context-notifications/ title=in-context-notifications.md class=dd-item><a href=/AL-Dev-Help/navpatterns/in-context-notifications/>in-context-notifications.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/indentation/ title=indentation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/indentation/>indentation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/initialized-variables/ title=initialized-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/initialized-variables/>initialized-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/instructions-in-the-ui/ title=instructions-in-the-ui.md class=dd-item><a href=/AL-Dev-Help/navpatterns/instructions-in-the-ui/>instructions-in-the-ui.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/integration-of-addresses/ title=integration-of-addresses.md class=dd-item><a href=/AL-Dev-Help/navpatterns/integration-of-addresses/>integration-of-addresses.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/internally-used-dot-net-types/ title=internally-used-dot-net-types.md class=dd-item><a href=/AL-Dev-Help/navpatterns/internally-used-dot-net-types/>internally-used-dot-net-types.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/internationalization/ title=internationalization.md class=dd-item><a href=/AL-Dev-Help/navpatterns/internationalization/>internationalization.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/journal-error-processing/ title=journal-error-processing.md class=dd-item><a href=/AL-Dev-Help/navpatterns/journal-error-processing/>journal-error-processing.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/journal-template-batch-line/ title=journal-template-batch-line.md class=dd-item><a href=/AL-Dev-Help/navpatterns/journal-template-batch-line/>journal-template-batch-line.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/keyword-pairs-indentation/ title=keyword-pairs-indentation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/keyword-pairs-indentation/>keyword-pairs-indentation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/line-start-keywords/ title=line-start-keywords.md class=dd-item><a href=/AL-Dev-Help/navpatterns/line-start-keywords/>line-start-keywords.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/localizability/ title=localizability.md class=dd-item><a href=/AL-Dev-Help/navpatterns/localizability/>localizability.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/lonely-repeat/ title=lonely-repeat.md class=dd-item><a href=/AL-Dev-Help/navpatterns/lonely-repeat/>lonely-repeat.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/maintainability-index/ title=maintainability-index.md class=dd-item><a href=/AL-Dev-Help/navpatterns/maintainability-index/>maintainability-index.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/master-data/ title=master-data.md class=dd-item><a href=/AL-Dev-Help/navpatterns/master-data/>master-data.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/message-and-error/ title=message-and-error.md class=dd-item><a href=/AL-Dev-Help/navpatterns/message-and-error/>message-and-error.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multi-file-download/ title=multi-file-download.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multi-file-download/>multi-file-download.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multi-page-list/ title=multi-page-list.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multi-page-list/>multi-page-list.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/multilanguage-application-data/ title=multilanguage-application-data.md class=dd-item><a href=/AL-Dev-Help/navpatterns/multilanguage-application-data/>multilanguage-application-data.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/named-invocations/ title=named-invocations.md class=dd-item><a href=/AL-Dev-Help/navpatterns/named-invocations/>named-invocations.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/nav-upgrade/ title=nav-upgrade.md class=dd-item><a href=/AL-Dev-Help/navpatterns/nav-upgrade/>nav-upgrade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/nested-withs/ title=nested-withs.md class=dd-item><a href=/AL-Dev-Help/navpatterns/nested-withs/>nested-withs.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/net-exception-handling-in-cal/ title=net-exception-handling-in-cal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/net-exception-handling-in-cal/>net-exception-handling-in-cal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/no-series/ title=no-series.md class=dd-item><a href=/AL-Dev-Help/navpatterns/no-series/>no-series.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/notification-lifecycle-management-pattern/ title=notification-lifecycle-management-pattern.md class=dd-item><a href=/AL-Dev-Help/navpatterns/notification-lifecycle-management-pattern/>notification-lifecycle-management-pattern.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/notifications/ title=notifications.md class=dd-item><a href=/AL-Dev-Help/navpatterns/notifications/>notifications.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/observer/ title=observer.md class=dd-item><a href=/AL-Dev-Help/navpatterns/observer/>observer.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/one-statement-per-line/ title=one-statement-per-line.md class=dd-item><a href=/AL-Dev-Help/navpatterns/one-statement-per-line/>one-statement-per-line.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/parameter-placeholders/ title=parameter-placeholders.md class=dd-item><a href=/AL-Dev-Help/navpatterns/parameter-placeholders/>parameter-placeholders.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/patterns-authors/ title=patterns-authors.md class=dd-item><a href=/AL-Dev-Help/navpatterns/patterns-authors/>patterns-authors.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/posting-routine-select-behavior/ title=posting-routine-select-behavior.md class=dd-item><a href=/AL-Dev-Help/navpatterns/posting-routine-select-behavior/>posting-routine-select-behavior.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/product-name/ title=product-name.md class=dd-item><a href=/AL-Dev-Help/navpatterns/product-name/>product-name.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/queries/ title=queries.md class=dd-item><a href=/AL-Dev-Help/navpatterns/queries/>queries.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/read-once-initialization-and-validation/ title=read-once-initialization-and-validation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/read-once-initialization-and-validation/>read-once-initialization-and-validation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/readability/ title=readability.md class=dd-item><a href=/AL-Dev-Help/navpatterns/readability/>readability.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/related-links/ title=related-links.md class=dd-item><a href=/AL-Dev-Help/navpatterns/related-links/>related-links.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/released-entity/ title=released-entity.md class=dd-item><a href=/AL-Dev-Help/navpatterns/released-entity/>released-entity.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/report-selection/ title=report-selection.md class=dd-item><a href=/AL-Dev-Help/navpatterns/report-selection/>report-selection.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/reusable-bugs/ title=reusable-bugs.md class=dd-item><a href=/AL-Dev-Help/navpatterns/reusable-bugs/>reusable-bugs.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/security/ title=security.md class=dd-item><a href=/AL-Dev-Help/navpatterns/security/>security.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/select-distinct-with-queries/ title=select-distinct-with-queries.md class=dd-item><a href=/AL-Dev-Help/navpatterns/select-distinct-with-queries/>select-distinct-with-queries.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/separate-if-and-else/ title=separate-if-and-else.md class=dd-item><a href=/AL-Dev-Help/navpatterns/separate-if-and-else/>separate-if-and-else.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/setup-specificity-fallback/ title=setup-specificity-fallback.md class=dd-item><a href=/AL-Dev-Help/navpatterns/setup-specificity-fallback/>setup-specificity-fallback.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/setup-table/ title=setup-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/setup-table/>setup-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/silent-file-upload-and-download/ title=silent-file-upload-and-download.md class=dd-item><a href=/AL-Dev-Help/navpatterns/silent-file-upload-and-download/>silent-file-upload-and-download.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton/ title=singleton.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton/>singleton.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton-codeunit/ title=singleton-codeunit.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton-codeunit/>singleton-codeunit.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/singleton-table/ title=singleton-table.md class=dd-item><a href=/AL-Dev-Help/navpatterns/singleton-table/>singleton-table.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-binary-operators/ title=spacing-binary-operators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-binary-operators/>spacing-binary-operators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-brackets-and/ title=spacing-brackets-and.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-brackets-and/>spacing-brackets-and.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/spacing-unary-operators/ title=spacing-unary-operators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/spacing-unary-operators/>spacing-unary-operators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/standard-journal/ title=standard-journal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/standard-journal/>standard-journal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/static-object-invocation/ title=static-object-invocation.md class=dd-item><a href=/AL-Dev-Help/navpatterns/static-object-invocation/>static-object-invocation.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/suggested-abbreviations/ title=suggested-abbreviations.md class="dd-item active"><a href=/AL-Dev-Help/navpatterns/suggested-abbreviations/>suggested-abbreviations.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/template-for-writing-nav-design-patterns/ title=template-for-writing-nav-design-patterns.md class=dd-item><a href=/AL-Dev-Help/navpatterns/template-for-writing-nav-design-patterns/>template-for-writing-nav-design-patterns.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/temporary-dataset-report/ title=temporary-dataset-report.md class=dd-item><a href=/AL-Dev-Help/navpatterns/temporary-dataset-report/>temporary-dataset-report.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/temporary-variable-naming/ title=temporary-variable-naming.md class=dd-item><a href=/AL-Dev-Help/navpatterns/temporary-variable-naming/>temporary-variable-naming.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/textconst-suffixes/ title=textconst-suffixes.md class=dd-item><a href=/AL-Dev-Help/navpatterns/textconst-suffixes/>textconst-suffixes.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/totals-and-discounts-on-subpages-sales-and-purchases/ title=totals-and-discounts-on-subpages-sales-and-purchases.md class=dd-item><a href=/AL-Dev-Help/navpatterns/totals-and-discounts-on-subpages-sales-and-purchases/>totals-and-discounts-on-subpages-sales-and-purchases.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/transfer-custom-fields/ title=transfer-custom-fields.md class=dd-item><a href=/AL-Dev-Help/navpatterns/transfer-custom-fields/>transfer-custom-fields.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/tryfunction-net-exception-handling-in-cal/ title=tryfunction-net-exception-handling-in-cal.md class=dd-item><a href=/AL-Dev-Help/navpatterns/tryfunction-net-exception-handling-in-cal/>tryfunction-net-exception-handling-in-cal.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unary-operator-line-end/ title=unary-operator-line-end.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unary-operator-line-end/>unary-operator-line-end.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-compound-parenthesis/ title=unnecessary-compound-parenthesis.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-compound-parenthesis/>unnecessary-compound-parenthesis.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-else/ title=unnecessary-else.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-else/>unnecessary-else.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-function-parenthesis/ title=unnecessary-function-parenthesis.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-function-parenthesis/>unnecessary-function-parenthesis.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-separators/ title=unnecessary-separators.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-separators/>unnecessary-separators.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unnecessary-truefalse/ title=unnecessary-truefalse.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unnecessary-truefalse/>unnecessary-truefalse.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unreachable-code/ title=unreachable-code.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unreachable-code/>unreachable-code.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unused-initialized-variables/ title=unused-initialized-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unused-initialized-variables/>unused-initialized-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/unused-variables/ title=unused-variables.md class=dd-item><a href=/AL-Dev-Help/navpatterns/unused-variables/>unused-variables.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-queries-to-detect-duplicate-records/ title=use-queries-to-detect-duplicate-records.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-queries-to-detect-duplicate-records/>use-queries-to-detect-duplicate-records.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-queries-to-replace-nested-loops/ title=use-queries-to-replace-nested-loops.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-queries-to-replace-nested-loops/>use-queries-to-replace-nested-loops.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/use-text-constants/ title=use-text-constants.md class=dd-item><a href=/AL-Dev-Help/navpatterns/use-text-constants/>use-text-constants.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/using-calcdate/ title=using-calcdate.md class=dd-item><a href=/AL-Dev-Help/navpatterns/using-calcdate/>using-calcdate.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/using-optioncaptionml/ title=using-optioncaptionml.md class=dd-item><a href=/AL-Dev-Help/navpatterns/using-optioncaptionml/>using-optioncaptionml.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/ux/ title=ux.md class=dd-item><a href=/AL-Dev-Help/navpatterns/ux/>ux.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-already-scoped/ title=variable-already-scoped.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-already-scoped/>variable-already-scoped.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-capacity-mismatch/ title=variable-capacity-mismatch.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-capacity-mismatch/>variable-capacity-mismatch.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variable-naming/ title=variable-naming.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variable-naming/>variable-naming.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variables-declarations-order/ title=variables-declarations-order.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variables-declarations-order/>variables-declarations-order.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/variant-facade/ title=variant-facade.md class=dd-item><a href=/AL-Dev-Help/navpatterns/variant-facade/>variant-facade.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/with-scope-name-collision/ title=with-scope-name-collision.md class=dd-item><a href=/AL-Dev-Help/navpatterns/with-scope-name-collision/>with-scope-name-collision.md</a></li></ul></li>
+</ul>
+<div id=shortcuts>
+<div class=nav-title>More</div>
+<ul>
+<li><a class=padding href=https://discord.gg/4wbfNv3><i class="fab fa-discord"></i> BC Discord</a></li>
+<li><a class=padding href=https://github.com/BC-Design-Patterns/AL-Dev-Help><i class="fab fa-github"></i> GitHub repo</a></li>
+</ul>
+</div>
+<div id=footer>
+<p>Built with <a href=https://github.com/McShelby/hugo-theme-relearn><i class="fas fa-heart"></i></a> by <a href=https://gohugo.io/>Hugo</a></p>
+</div>
+</div>
+</nav>
+<div id=body>
+<div id=overlay></div>
+<div class="padding highlightable">
+<div id=top-bar>
+<div id=breadcrumbs>
+<span id=sidebar-toggle-span>
+<a href=# id=sidebar-toggle data-sidebar-toggle>
+<i class="fas fa-bars"></i>
+</a>
+</span>
+<span id=toc-menu><i class="fas fa-list-alt"></i></span>
+<ol class=links itemscope itemtype=http://schema.org/BreadcrumbList>
+<meta itemprop=itemListOrder content="Descending">
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="3"><a itemprop=item href=/AL-Dev-Help/><span itemprop=name>Home</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="2"><a itemprop=item href=/AL-Dev-Help/navpatterns/><span itemprop=name>NAVPatterns</span></a> > </li>
+<li itemscope itemtype=https://schema.org/ListItem itemprop=itemListElement><meta itemprop=position content="1"><a itemprop=item href=/AL-Dev-Help/navpatterns/suggested-abbreviations/ aria-disabled=true><span itemprop=name>suggested-abbreviations.md</span></a></li>
+</ol>
+</div>
+<div class=progress>
+<div class=wrapper>
+<nav id=TableOfContents>
+<ul>
+<li>
+<ul>
+<li><a href=#suggested-abbreviations>Suggested Abbreviations</a></li>
+</ul>
+</li>
+<li><a href=#heading></a></li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div id=head-tags>
+</div>
+<main id=body-inner>
+<h1>suggested-abbreviations.md</h1>
+<h3 id=suggested-abbreviations>Suggested Abbreviations</h3>
+<p>Whenever possible, do not use abbreviations in variables, functions and objects names.</p>
+<p>If there is no other choice, then use the suggestions below.</p>
+<p><strong>Abbreviation</strong></p>
+<p><strong>Text</strong></p>
+<p>Abs</p>
+<p>absence</p>
+<p>Acc</p>
+<p>account</p>
+<p>Acc</p>
+<p>accounting</p>
+<p>Accum</p>
+<p>accumulated</p>
+<p>Act</p>
+<p>action</p>
+<p>Activ</p>
+<p>activity</p>
+<p>Add</p>
+<p>additional</p>
+<p>Addr</p>
+<p>address</p>
+<p>Adj</p>
+<p>adjust</p>
+<p>Adjd</p>
+<p>adjusted</p>
+<p>Adjmt</p>
+<p>adjustment</p>
+<p>Agrmt</p>
+<p>agreement</p>
+<p>Alloc</p>
+<p>allocation</p>
+<p>Allow</p>
+<p>allowance</p>
+<p>Alt</p>
+<p>alternative</p>
+<p>Amt</p>
+<p>amount</p>
+<p>Amts</p>
+<p>amounts</p>
+<p>Ans</p>
+<p>answer</p>
+<p>Appl</p>
+<p>applies</p>
+<p>Appln</p>
+<p>application</p>
+<p>Arriv</p>
+<p>arrival</p>
+<p>Asm</p>
+<p>assembly</p>
+<p>ATO</p>
+<p>assemble to order</p>
+<p>Assgnt</p>
+<p>assignment</p>
+<p>Assoc</p>
+<p>associated</p>
+<p>Attmt</p>
+<p>attachment</p>
+<p>Auth</p>
+<p>authorities</p>
+<p>Auto</p>
+<p>automatic</p>
+<p>Avail</p>
+<p>availability</p>
+<p>Avg</p>
+<p>average</p>
+<p>BA</p>
+<p>ba db.</p>
+<p>Bal</p>
+<p>balance</p>
+<p>BOM</p>
+<p>bill of materials</p>
+<p>Blnkt</p>
+<p>blanket</p>
+<p>Budg</p>
+<p>budget</p>
+<p>Buf</p>
+<p>buffer</p>
+<p>Bus</p>
+<p>business</p>
+<p>BIM</p>
+<p>business interaction management</p>
+<p>Buy</p>
+<p>buying</p>
+<p>Calc</p>
+<p>calculate</p>
+<p>Calcd</p>
+<p>calculated</p>
+<p>Calcu</p>
+<p>calculation</p>
+<p>Cal</p>
+<p>calendar</p>
+<p>Cap</p>
+<p>capacity</p>
+<p>CRP</p>
+<p>capacity requirements planning</p>
+<p>CF</p>
+<p>cash flow</p>
+<p>CF</p>
+<p>cashflow</p>
+<p>ctlg</p>
+<p>catalog</p>
+<p>Cat</p>
+<p>category</p>
+<p>CPU</p>
+<p>Central Processing Unit</p>
+<p>Ctr</p>
+<p>center</p>
+<p>Chg</p>
+<p>change</p>
+<p>Chgs</p>
+<p>changes</p>
+<p>Char</p>
+<p>character</p>
+<p>Chars</p>
+<p>characters</p>
+<p>Chrg</p>
+<p>charge</p>
+<p>Chrgs</p>
+<p>charges</p>
+<p>Chk</p>
+<p>check</p>
+<p>Class</p>
+<p>classification</p>
+<p>coll</p>
+<p>collection</p>
+<p>col</p>
+<p>column</p>
+<p>Cmt</p>
+<p>comment</p>
+<p>Co</p>
+<p>company</p>
+<p>Comp</p>
+<p>component</p>
+<p>Cmpltn</p>
+<p>completion</p>
+<p>Comps</p>
+<p>components</p>
+<p>Compn</p>
+<p>composition</p>
+<p>Compr</p>
+<p>compression</p>
+<p>Concrnt</p>
+<p>concurrent</p>
+<p>Conf</p>
+<p>confidential</p>
+<p>Cnfrmn</p>
+<p>confirmation</p>
+<p>Confl</p>
+<p>conflict</p>
+<p>Consol</p>
+<p>consolidate</p>
+<p>Consolid</p>
+<p>consolidation</p>
+<p>Consump</p>
+<p>consumption</p>
+<p>Cont</p>
+<p>contact</p>
+<p>Cntr</p>
+<p>container</p>
+<p>Contr</p>
+<p>contract</p>
+<p>Contrd</p>
+<p>contracted</p>
+<p>Ctrl</p>
+<p>control</p>
+<p>Ctrls</p>
+<p>controls</p>
+<p>Conv</p>
+<p>conversion</p>
+<p>Cor</p>
+<p>correction</p>
+<p>Corres</p>
+<p>correspondence</p>
+<p>Corresp</p>
+<p>corresponding</p>
+<p>Cst</p>
+<p>cost</p>
+<p>COGS</p>
+<p>sold</p>
+<p>Cr</p>
+<p>credit</p>
+<p>Cumul</p>
+<p>cumulate</p>
+<p>Curr</p>
+<p>currency</p>
+<p>Crnt</p>
+<p>current</p>
+<p>Cust</p>
+<p>customer</p>
+<p>CV</p>
+<p>customer/vendor</p>
+<p>Dly</p>
+<p>daily</p>
+<p>Damp</p>
+<p>dampener</p>
+<p>DBMS</p>
+<p>database management system</p>
+<p>D</p>
+<p>date</p>
+<p>Def</p>
+<p>definition</p>
+<p>Demo</p>
+<p>demonstration</p>
+<p>Dept</p>
+<p>department</p>
+<p>DP</p>
+<p>department/project</p>
+<p>Depr</p>
+<p>depreciation</p>
+<p>Desc</p>
+<p>description</p>
+<p>Dtl</p>
+<p>detail</p>
+<p>Dtld</p>
+<p>detailed</p>
+<p>Dtls</p>
+<p>details</p>
+<p>Dev</p>
+<p>deviation</p>
+<p>Diff</p>
+<p>difference</p>
+<p>Dim</p>
+<p>dimension</p>
+<p>Dir</p>
+<p>direct</p>
+<p>Disc</p>
+<p>discount</p>
+<p>Discr</p>
+<p>discrete</p>
+<p>Distr</p>
+<p>distribute</p>
+<p>Distrd</p>
+<p>distributed</p>
+<p>Distbtr</p>
+<p>distributor</p>
+<p>Distrn</p>
+<p>distribution</p>
+<p>Doc</p>
+<p>document</p>
+<p>Dupl</p>
+<p>duplicate</p>
+<p>Entrd</p>
+<p>entered</p>
+<p>Engin</p>
+<p>engineering</p>
+<p>Exch</p>
+<p>exchange</p>
+<p>Excl</p>
+<p>excluding</p>
+<p>Exec</p>
+<p>execute</p>
+<p>Expd</p>
+<p>expected</p>
+<p>Exped</p>
+<p>expedited</p>
+<p>Exp</p>
+<p>expense</p>
+<p>Expr</p>
+<p>expression</p>
+<p>Expir</p>
+<p>expiration</p>
+<p>Ext</p>
+<p>extended</p>
+<p>Expl</p>
+<p>explode</p>
+<p>Expt</p>
+<p>export</p>
+<p>Fnl</p>
+<p>final</p>
+<p>Fin</p>
+<p>finance</p>
+<p>Fisc</p>
+<p>fiscal</p>
+<p>Fnshd</p>
+<p>finished</p>
+<p>FA</p>
+<p>fixed asset</p>
+<p>Fwd</p>
+<p>forward</p>
+<p>Frt</p>
+<p>freight</p>
+<p>Gen</p>
+<p>general</p>
+<p>GL</p>
+<p>general ledger</p>
+<p>Gr</p>
+<p>group</p>
+<p>Hdr</p>
+<p>header</p>
+<p>Hist</p>
+<p>history</p>
+<p>Hol</p>
+<p>holiday</p>
+<p>HR</p>
+<p>human resource</p>
+<p>ID</p>
+<p>identification</p>
+<p>Imp</p>
+<p>import</p>
+<p>Inbnd</p>
+<p>inbound</p>
+<p>Incl</p>
+<p>including</p>
+<p>Incld</p>
+<p>included</p>
+<p>Incmg</p>
+<p>incoming</p>
+<p>ISV</p>
+<p>independent software vendor</p>
+<p>Indust</p>
+<p>industry</p>
+<p>Info</p>
+<p>information</p>
+<p>Init</p>
+<p>initial</p>
+<p>Intra</p>
+<p>Intrastat</p>
+<p>Interact</p>
+<p>interaction</p>
+<p>Integr</p>
+<p>integration</p>
+<p>Int</p>
+<p>interest</p>
+<p>Intm</p>
+<p>Interim</p>
+<p>IP</p>
+<p>internal protocol</p>
+<p>Invt</p>
+<p>inventory</p>
+<p>Invtbl</p>
+<p>inventoriable</p>
+<p>Inv</p>
+<p>invoice</p>
+<p>Invd</p>
+<p>invoiced</p>
+<p>IT</p>
+<p>item tracking</p>
+<p>Jnl</p>
+<p>journal</p>
+<p>Lang</p>
+<p>language</p>
+<p>Ledg</p>
+<p>ledger</p>
+<p>Lvl</p>
+<p>level</p>
+<p>Ln</p>
+<p>line</p>
+<p>Lt</p>
+<p>list</p>
+<p>LCY</p>
+<p>local currency</p>
+<p>Loc</p>
+<p>location</p>
+<p>Mail</p>
+<p>mailing</p>
+<p>Maint</p>
+<p>maintenance</p>
+<p>Mgt</p>
+<p>management</p>
+<p>Man</p>
+<p>manual</p>
+<p>Mfg</p>
+<p>manufacturing</p>
+<p>Mfr</p>
+<p>manufacturer</p>
+<p>Mat</p>
+<p>material</p>
+<p>Mktg</p>
+<p>marketing</p>
+<p>Max</p>
+<p>maximum</p>
+<p>Meas</p>
+<p>measure</p>
+<p>Msg</p>
+<p>message</p>
+<p>Min</p>
+<p>minimum</p>
+<p>Misc</p>
+<p>miscellaneous</p>
+<p>Mod</p>
+<p>modify</p>
+<p>Mth</p>
+<p>month</p>
+<p>Neg</p>
+<p>negative</p>
+<p>NonInvtbl</p>
+<p>non-inventoriable</p>
+<p>Notif</p>
+<p>notification</p>
+<p>No</p>
+<p>number</p>
+<p>Nos</p>
+<p>numbers</p>
+<p>Obj</p>
+<p>object</p>
+<p>Oper</p>
+<p>operating</p>
+<p>Opp</p>
+<p>opportunity</p>
+<p>Ord</p>
+<p>order</p>
+<p>Ords</p>
+<p>orders</p>
+<p>Orig</p>
+<p>original</p>
+<p>Org</p>
+<p>organization</p>
+<p>Outbnd</p>
+<p>outbound</p>
+<p>Outg</p>
+<p>Outgoing</p>
+<p>Out</p>
+<p>output</p>
+<p>Outstd</p>
+<p>outstanding</p>
+<p>Ovhd</p>
+<p>overhead</p>
+<p>Pmt</p>
+<p>payment</p>
+<p>Pct</p>
+<p>percent</p>
+<p>Persnl</p>
+<p>personnel</p>
+<p>Phys</p>
+<p>physical</p>
+<p>Pic</p>
+<p>picture</p>
+<p>Plng</p>
+<p>planning</p>
+<p>Pstd</p>
+<p>posted</p>
+<p>Post</p>
+<p>posting</p>
+<p>Pos</p>
+<p>positive</p>
+<p>Prec</p>
+<p>precision</p>
+<p>Prepmt</p>
+<p>prepayment</p>
+<p>Prod</p>
+<p>product</p>
+<p>Prod</p>
+<p>production</p>
+<p>ProdOrd</p>
+<p>production order</p>
+<p>Proj</p>
+<p>project</p>
+<p>Prop</p>
+<p>property</p>
+<p>Prspct</p>
+<p>prospect</p>
+<p>Purch</p>
+<p>purchase</p>
+<p>Purch</p>
+<p>purchases</p>
+<p>Purchr</p>
+<p>purchaser</p>
+<p>PurchOrd</p>
+<p>purchase order</p>
+<p>Qlty</p>
+<p>quality</p>
+<p>Qty</p>
+<p>quantity</p>
+<p>Questn</p>
+<p>questionnaire</p>
+<p>Qte</p>
+<p>quote</p>
+<p>RF</p>
+<p>radio frequency</p>
+<p>Rng</p>
+<p>range</p>
+<p>Rcpt</p>
+<p>receipt</p>
+<p>Rcd</p>
+<p>received</p>
+<p>Rec</p>
+<p>record</p>
+<p>Recs</p>
+<p>records</p>
+<p>Recncl</p>
+<p>reconcile</p>
+<p>Recon</p>
+<p>reconciliation</p>
+<p>Recur</p>
+<p>recurring</p>
+<p>Ref</p>
+<p>reference</p>
+<p>Reg</p>
+<p>register</p>
+<p>Regn</p>
+<p>registration</p>
+<p>Regd</p>
+<p>registered</p>
+<p>Rel</p>
+<p>relation</p>
+<p>Rels</p>
+<p>relations</p>
+<p>Rlshp</p>
+<p>relationship</p>
+<p>Rlse</p>
+<p>release</p>
+<p>Rlsd</p>
+<p>released</p>
+<p>Rem</p>
+<p>remaining</p>
+<p>Rmdr</p>
+<p>reminder</p>
+<p>Repl</p>
+<p>replacement</p>
+<p>Rplnsh</p>
+<p>replenish</p>
+<p>Rplnsht</p>
+<p>replenishment</p>
+<p>Rpt</p>
+<p>report</p>
+<p>Rep</p>
+<p>represent</p>
+<p>Repd</p>
+<p>represented</p>
+<p>Rqst</p>
+<p>request</p>
+<p>Reqd</p>
+<p>required</p>
+<p>Reqt</p>
+<p>requirement</p>
+<p>Reqts</p>
+<p>requirements</p>
+<p>Req</p>
+<p>requisition</p>
+<p>Rsv</p>
+<p>reserve</p>
+<p>Rsvd</p>
+<p>reserved</p>
+<p>Reserv</p>
+<p>reservation</p>
+<p>Resol</p>
+<p>resolution</p>
+<p>Res</p>
+<p>resource</p>
+<p>Rsp</p>
+<p>response</p>
+<p>Resp</p>
+<p>responsibility</p>
+<p>Rtn</p>
+<p>retain</p>
+<p>Rtnd</p>
+<p>retained</p>
+<p>Ret</p>
+<p>return</p>
+<p>Rets</p>
+<p>returns</p>
+<p>Revaln</p>
+<p>revaluation</p>
+<p>Rev</p>
+<p>reverse</p>
+<p>Rvw</p>
+<p>review</p>
+<p>Rnd</p>
+<p>round</p>
+<p>Rndd</p>
+<p>rounded</p>
+<p>Rndg</p>
+<p>rounding</p>
+<p>Rte</p>
+<p>route</p>
+<p>Rtng</p>
+<p>routing</p>
+<p>Rout</p>
+<p>routine</p>
+<p>Sales</p>
+<p>sales & receivables</p>
+<p>Saf</p>
+<p>safety</p>
+<p>Sched</p>
+<p>schedule</p>
+<p>Sec</p>
+<p>second</p>
+<p>Seg</p>
+<p>segment</p>
+<p>Sel</p>
+<p>select</p>
+<p>Selctn</p>
+<p>selection</p>
+<p>Seq</p>
+<p>sequence</p>
+<p>Ser</p>
+<p>serial</p>
+<p>SN</p>
+<p>serial number</p>
+<p>Serv</p>
+<p>service</p>
+<p>Sh</p>
+<p>sheet</p>
+<p>Shpt</p>
+<p>shipment</p>
+<p>Src</p>
+<p>source</p>
+<p>Spcl</p>
+<p>special</p>
+<p>Spec</p>
+<p>specification</p>
+<p>Specs</p>
+<p>specifications</p>
+<p>Std</p>
+<p>standard</p>
+<p>SF</p>
+<p>frequency</p>
+<p>Stmt</p>
+<p>statement</p>
+<p>Stat</p>
+<p>statistical</p>
+<p>Stats</p>
+<p>statistics</p>
+<p>Stk</p>
+<p>stock</p>
+<p>SKU</p>
+<p>stockkeeping unit</p>
+<p>Stm</p>
+<p>stream</p>
+<p>SQL</p>
+<p>structured query language</p>
+<p>Subcontr</p>
+<p>subcontract</p>
+<p>Subcontrd</p>
+<p>subcontracted</p>
+<p>Subcontrg</p>
+<p>subcontracting</p>
+<p>Sub</p>
+<p>substitute</p>
+<p>Subst</p>
+<p>substitution</p>
+<p>Sug</p>
+<p>suggest</p>
+<p>Sugd</p>
+<p>suggested</p>
+<p>Sugn</p>
+<p>suggestion</p>
+<p>Sum</p>
+<p>summary</p>
+<p>Suspd</p>
+<p>suspended</p>
+<p>Sympt</p>
+<p>symptom</p>
+<p>Synch</p>
+<p>synchronize</p>
+<p>Temp</p>
+<p>temporary</p>
+<p>Tot</p>
+<p>total</p>
+<p>Transac</p>
+<p>transaction</p>
+<p>Trans</p>
+<p>transfer</p>
+<p>Transln</p>
+<p>translation</p>
+<p>Trkg</p>
+<p>tracking</p>
+<p>Tblsht</p>
+<p>troubleshoot</p>
+<p>Tblshtg</p>
+<p>troubleshooting</p>
+<p>UOM</p>
+<p>unit of measure</p>
+<p>UT</p>
+<p>unit test</p>
+<p>Unreal</p>
+<p>unrealized</p>
+<p>Unrsvd</p>
+<p>unreserved</p>
+<p>Upd</p>
+<p>update</p>
+<p>Valn</p>
+<p>valuation</p>
+<p>Val</p>
+<p>value</p>
+<p>VAT</p>
+<p>value added tax</p>
+<p>Var</p>
+<p>variance</p>
+<p>Vend</p>
+<p>vendor</p>
+<p>Whse</p>
+<p>warehouse</p>
+<p>WS</p>
+<p>web shop</p>
+<p>Wksh</p>
+<p>worksheet</p>
+<p>GL</p>
+<p>g/l</p>
+<p>Pct</p>
+<p>%</p>
+<p>Three-Tier</p>
+<p>3-tier</p>
+<p>Osynch</p>
+<p>Outlook Synch</p>
+<h2 id=heading></h2>
+<footer class=footline>
+</footer>
+</main>
+</div>
+<div id=navigation>
+<a class="nav nav-prev" href=/AL-Dev-Help/navpatterns/static-object-invocation/ title=static-object-invocation.md><i class="fa fa-chevron-left"></i></a>
+<a class="nav nav-next" href=/AL-Dev-Help/navpatterns/template-for-writing-nav-design-patterns/ title=template-for-writing-nav-design-patterns.md><i class="fa fa-chevron-right"></i></a>
+</div>
+</div>
+<div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
+<div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
+</div>
+<script src=/AL-Dev-Help/js/clipboard.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.jquery.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/jquery.svg.pan.zoom.js?1634855005></script>
+<script src=/AL-Dev-Help/js/featherlight.min.js?1634855005></script>
+<script src=/AL-Dev-Help/js/modernizr.custom-3.6.0.js?1634855005></script>
+<script src=/AL-Dev-Help/js/mermaid.min.js?1634855005></script>
+<script>typeof mermaid!='undefined'&&mermaid.mermaidAPI.initialize(Object.assign({securityLevel:"antiscript"},JSON.parse('{ "startOnLoad": true }'),{startOnLoad:!1}))</script>
+<script src=/AL-Dev-Help/js/relearn.js?1634855005></script>
+</body>
+</html>
