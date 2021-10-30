@@ -5,16 +5,16 @@
 <meta name=generator content="Hugo 0.88.1">
 <meta name=description content>
 <title>Argument Table :: BC AL Help</title>
-<link href=/AL-Dev-Help/css/nucleus.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/fontawesome-all.min.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/featherlight.min.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/perfect-scrollbar.min.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/auto-complete.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/theme.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/theme-blue.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/variant.css?1635629553 rel=stylesheet>
-<link href=/AL-Dev-Help/css/print.css?1635629553 rel=stylesheet media=print>
-<script src=/AL-Dev-Help/js/jquery.min.js?1635629553></script>
+<link href=/AL-Dev-Help/css/nucleus.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/fontawesome-all.min.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/featherlight.min.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/perfect-scrollbar.min.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/auto-complete.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/theme-blue.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/variant.css?1635630941 rel=stylesheet>
+<link href=/AL-Dev-Help/css/print.css?1635630941 rel=stylesheet media=print>
+<script src=/AL-Dev-Help/js/jquery.min.js?1635630941></script>
 <style>:root #header+#content>#left>#rlblock_left{display:none!important}</style>
 </head>
 <body data-url=/AL-Dev-Help/navpatterns/1-patterns/argument-table/>
@@ -31,10 +31,10 @@ BC AL Help . dev
 <input data-search-input id=search-by type=search placeholder=Search...>
 <span data-search-clear><i class="fas fa-times"></i></span>
 </div>
-<script src=/AL-Dev-Help/js/lunr.min.js?1635629553></script>
-<script src=/AL-Dev-Help/js/auto-complete.js?1635629553></script>
+<script src=/AL-Dev-Help/js/lunr.min.js?1635630941></script>
+<script src=/AL-Dev-Help/js/auto-complete.js?1635630941></script>
 <script>var index_url="/AL-Dev-Help/index.json",root_url="/",baseUri=root_url.replace(/\/$/,'')</script>
-<script src=/AL-Dev-Help/js/search.js?1635629553></script>
+<script src=/AL-Dev-Help/js/search.js?1635630941></script>
 </div>
 <div class=highlightable>
 <ul class=topics>
@@ -45,9 +45,9 @@ BC AL Help . dev
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/ title="1. Patterns" class="dd-item parent"><a href=/AL-Dev-Help/navpatterns/1-patterns/>1. Patterns</a><ul>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/activity-log/ title="Activity Logs" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/activity-log/>Activity Logs</a></li>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/argument-table/ title="Argument Table" class="dd-item active"><a href=/AL-Dev-Help/navpatterns/1-patterns/argument-table/>Argument Table</a></li>
-<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/ title="Blocked Entity.md" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/>Blocked Entity.md</a><ul>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/ title="Blocked Entity" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/>Blocked Entity</a><ul>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/data-driven-blocked-entity/ title="Data Driven Blocked Entity" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/data-driven-blocked-entity/>Data Driven Blocked Entity</a></li></ul></li>
-<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/cached-web-service-calls/ title="Cached Web Server Calls.md" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/cached-web-service-calls/>Cached Web Server Calls.md</a></li>
+<li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/cached-web-service-calls/ title="Cached Web Server Calls" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/cached-web-service-calls/>Cached Web Server Calls</a></li>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/conditional-cascading-update/ title="Conditional Cascading Update" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/conditional-cascading-update/>Conditional Cascading Update</a></li>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/copy-document/ title="Copy Document" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/copy-document/>Copy Document</a></li>
 <li data-nav-id=/AL-Dev-Help/navpatterns/1-patterns/create-data-from-templates/ title="Create Data from Templates" class=dd-item><a href=/AL-Dev-Help/navpatterns/1-patterns/create-data-from-templates/>Create Data from Templates</a></li>
@@ -216,7 +216,7 @@ BC AL Help . dev
 <main id=body-inner>
 <h1>Argument Table</h1>
 <h1 id=argument-table-pattern>Argument table pattern</h1>
-<p><em>By Nikola Kukrika and Waldo</em></p>
+<p><em>Originally By Nikola Kukrika and Waldo</em></p>
 <h1 id=abstract>Abstract</h1>
 <p>The Argument Table pattern is used to provide an extension point for adding new arguments without changing the signature. By grouping multiple arguments into a table the code becomes more readable (function signature and the usage of the function).</p>
 <p><a href=0218.Argument-Table-image.png><img src=0218.Argument-Table-image.png alt=" "></a></p>
@@ -227,32 +227,26 @@ BC AL Help . dev
 <p>The last problem that can be solved is high number of arguments. Functions with a high number of arguments are hard to understand. Having arguments grouped within the table with a meaningful name will improve readability and make code easier to understanding.</p>
 <p>Few examples of the bad implementations are as illustrated here:</p>
 <h2 id=bad-example-1>Bad example 1</h2>
-<p><strong>PROCEDURE FillInVATReturnData@1200001(VAR DeclarationID@1200000 : Code[20];VAR LineID@1200001 :</strong><br>
-<strong>Code[20];VAR PeerID@1200002 : Code[20]; VAR DocumentNo@1200003 : Code[20]; VAR NumberOfCopies@1200007 :</strong><br>
-<strong>Integer; VAR Uploaded@1200004 : Boolean; VAR Correction@1200005 : Boolean; VAR HasValidationErr@1200006 :</strong><br>
-<strong>Boolean);</strong></p>
-<p>Call</p>
-<p><strong>FillInVATReturnData(NoSeries, NextLineID, CustomerID, DocumentNo, SingleCopy, ???, ??, &mldr;., &mldr;)</strong></p>
-<p>In this example the code is hard to read and understand. Adding an additional argument will require refactoring of the existing function. Each time a new argument is added a new function will be created.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL><span style=color:#66d9ef>PROCEDURE</span> FillInVATReturnData@<span style=color:#ae81ff>1200001</span><span style=color:#f92672>(</span><span style=color:#66d9ef>VAR</span> DeclarationID@<span style=color:#ae81ff>1200000</span> : <span style=color:#66d9ef>Code</span> [<span style=color:#ae81ff>20</span>];<span style=color:#66d9ef>VAR</span> LineID@<span style=color:#ae81ff>1200001</span> : <span style=color:#66d9ef>Code</span> [<span style=color:#ae81ff>20</span>];<span style=color:#66d9ef>VAR</span> PeerID@<span style=color:#ae81ff>1200002</span> : <span style=color:#66d9ef>Code</span> [<span style=color:#ae81ff>20</span>]; <span style=color:#66d9ef>VAR</span> DocumentNo@<span style=color:#ae81ff>1200003</span>: <span style=color:#66d9ef>Code</span>[<span style=color:#ae81ff>20</span>]; <span style=color:#66d9ef>VAR</span> NumberOfCopies@<span style=color:#ae81ff>1200007</span>: <span style=color:#66d9ef>Integer</span>; <span style=color:#66d9ef>VAR</span> Uploaded@<span style=color:#ae81ff>1200004</span> : <span style=color:#66d9ef>Boolean</span>; <span style=color:#66d9ef>VAR</span> Correction@<span style=color:#ae81ff>1200005</span> : <span style=color:#66d9ef>Boolean</span>; <span style=color:#66d9ef>VAR</span> HasValidationErr@<span style=color:#ae81ff>1200006</span> : <span style=color:#66d9ef>Boolean</span><span style=color:#f92672>)</span>;
+</code></pre></div><p><strong>Call</strong></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL>FillInVATReturnData<span style=color:#f92672>(</span>NoSeries, NextLineID, CustomerID, DocumentNo, SingleCopy, ???, ??, <span style=color:#f92672>....</span>, <span style=color:#f92672>...)
+</span></code></pre></div><p>In this example the code is hard to read and understand. Adding an additional argument will require refactoring of the existing function. Each time a new argument is added a new function will be created.</p>
 <h2 id=bad-example-2>Bad example 2</h2>
-<p><strong>LOCAL PROCEDURE GetTableSyncSetupW1@3(</strong><br>
-<strong>OldTableId@1002 : Integer;</strong><br>
-<strong>VAR UpgradeTableId@1001 : Integer;</strong><br>
-<strong>VAR TableUpgradeMode@1000 : &lsquo;Check, Copy, Move, Force&rsquo;) : Boolean;</strong><br>
-BEGIN<br>
-CASE OldTableId OF<br>
-DATABASE::&ldquo;Sales Header&rdquo;:<br>
-SetTableSyncSetup(0,TableUpgradeMode::Check,UpgradeTableId,TableUpgradeMode);<br>
-DATABASE::&ldquo;Posting Exch. Column Def&rdquo;:<br>
-SetTableSyncSetup(104025,TableUpgradeMode::Copy,UpgradeTableId,TableUpgradeMode);<br>
-DATABASE::&ldquo;Payment Export Data&rdquo;:<br>
-SetTableSyncSetup(0,TableUpgradeMode::Force,UpgradeTableId,TableUpgradeMode);<br>
-ELSE<br>
-EXIT(FALSE);<br>
-END;<br>
-EXIT(TRUE);<br>
-END;</p>
-<p>In this example each time a new argument is added all function calls will have to be updated. Option is duplicated in the signature, which will cause issues if a new option is defined or the existing options are renamed.</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL><span style=color:#66d9ef>LOCAL</span> <span style=color:#66d9ef>PROCEDURE</span> GetTableSyncSetupW1@<span style=color:#ae81ff>3</span><span style=color:#f92672>(</span>OldTableId@<span style=color:#ae81ff>1002</span> : <span style=color:#66d9ef>Integer</span>; <span style=color:#66d9ef>VAR</span> UpgradeTableId@<span style=color:#ae81ff>1001</span> : <span style=color:#66d9ef>Integer</span>; <span style=color:#66d9ef>VAR</span> TableUpgradeMode@<span style=color:#ae81ff>1000</span> : <span style=color:#e6db74>&#39;Check, Copy, Move, Force&#39;</span><span style=color:#f92672>) </span>: <span style=color:#66d9ef>Boolean</span>;  
+<span style=color:#66d9ef>BEGIN</span>  
+    <span style=color:#66d9ef>CASE</span> OldTableId <span style=color:#66d9ef>OF</span>  
+        <span style=color:#66d9ef>DATABASE</span>::&#34;Sales Header&#34;:  
+            SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#ae81ff>0</span>,TableUpgradeMode::Check,UpgradeTableId,TableUpgradeMode<span style=color:#f92672>)</span>;  
+        <span style=color:#66d9ef>DATABASE</span>::&#34;Posting Exch. Column Def&#34;:  
+            SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#ae81ff>104025</span>,TableUpgradeMode::Copy,UpgradeTableId,TableUpgradeMode<span style=color:#f92672>)</span>;  
+        <span style=color:#66d9ef>DATABASE</span>::&#34;Payment Export Data&#34;:  
+            SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#ae81ff>0</span>,TableUpgradeMode::Force,UpgradeTableId,TableUpgradeMode<span style=color:#f92672>)</span>;  
+        <span style=color:#66d9ef>ELSE</span>  
+            <span style=color:#66d9ef>EXIT</span><span style=color:#f92672>(</span>FALSE<span style=color:#f92672>)</span>;  
+    <span style=color:#66d9ef>END</span>;  
+    <span style=color:#66d9ef>EXIT</span><span style=color:#f92672>(</span>TRUE<span style=color:#f92672>)</span>;  
+<span style=color:#66d9ef>END</span>;
+</code></pre></div><p>In this example each time a new argument is added all function calls will have to be updated. Option is duplicated in the signature, which will cause issues if a new option is defined or the existing options are renamed.</p>
 <h1 id=solution>Solution</h1>
 <p>By grouping the arguments within the table it is possible to add additional argument and reuse it where it is needed without changing the signature.</p>
 <p>Multiple parameters are grouped within the single object with a meaningful name so the code becomes more readable.</p>
@@ -260,24 +254,25 @@ END;</p>
 <p>Argument table should preferably be a temporary table since the implementation is simpler.</p>
 <p>The examples of usages addressing problems shown above are:</p>
 <h2 id=good-example-1>Good example 1</h2>
-<p>New table<br>
-TAB 50003 VAT Return Data<br>
-<strong>PROCEDURE FillInVATReturnData@1200001(VAR VATReturnData@1200000 : Record 50003);</strong></p>
-<hr>
-<p>VATReturnData.INIT;<br>
-VATReturnData.NumberOfCopies := GetDefaultNumberOfCopies;<br>
-VATReturnData.Uploaded := FALSE;</p>
-<p>FillInVATReturnData(VATReturnData);</p>
-<p>By introducing an argument table, code is much more readable since there is a single argument for a function. It is easy to see which arguments are passed in and which are modified in a function.</p>
+<p>New table</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL>TAB <span style=color:#ae81ff>50003</span> VAT Return Data  
+<span style=color:#66d9ef>PROCEDURE</span> FillInVATReturnData@<span style=color:#ae81ff>1200001</span><span style=color:#f92672>(</span><span style=color:#66d9ef>VAR</span> VATReturnData@<span style=color:#ae81ff>1200000</span> : <span style=color:#66d9ef>Record</span> <span style=color:#ae81ff>50003</span><span style=color:#f92672>)</span>;
+</code></pre></div><hr>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL>VATReturnData<span style=color:#f92672>.</span>INIT;  
+VATReturnData<span style=color:#f92672>.</span>NumberOfCopies <span style=color:#f92672>:=</span> GetDefaultNumberOfCopies;  
+VATReturnData<span style=color:#f92672>.</span>Uploaded <span style=color:#f92672>:=</span> FALSE;
+
+FillInVATReturnData<span style=color:#f92672>(</span>VATReturnData<span style=color:#f92672>)</span>;
+</code></pre></div><p>By introducing an argument table, code is much more readable since there is a single argument for a function. It is easy to see which arguments are passed in and which are modified in a function.</p>
 <h2 id=good-example-2>Good example 2</h2>
-<p>Good example<br>
-<strong>PROCEDURE GetTableSyncSetupW1@3(VAR TableSynchSetup@1000 : Record 2000000135);</strong><br>
-BEGIN<br>
-SetTableSyncSetup(DATABASE::&ldquo;Sales Header&rdquo;,0,TableSynchSetup.Mode::Check);<br>
-SetTableSyncSetup(DATABASE::&ldquo;Posting Exch. Column Def&rdquo;,104025,TableSynchSetup.Mode::Copy);<br>
-SetTableSyncSetup(DATABASE::&ldquo;Payment Export Data&rdquo;,0,TableSynchSetup.Mode::Force);<br>
-END;</p>
-<p>Option definition is not encapsulated within the table. Arguments are grouped and we can add additional arguments without the need to change the signature.</p>
+<p>Good example</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-AL data-lang=AL><span style=color:#66d9ef>PROCEDURE</span> GetTableSyncSetupW1@<span style=color:#ae81ff>3</span><span style=color:#f92672>(</span><span style=color:#66d9ef>VAR</span> TableSynchSetup@<span style=color:#ae81ff>1000</span> : <span style=color:#66d9ef>Record</span> <span style=color:#ae81ff>2000000135</span><span style=color:#f92672>)</span>; 
+<span style=color:#66d9ef>BEGIN</span>  
+    SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#66d9ef>DATABASE</span>::&#34;Sales Header&#34;,<span style=color:#ae81ff>0</span>,TableSynchSetup<span style=color:#f92672>.</span>Mode::Check<span style=color:#f92672>)</span>;  
+    SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#66d9ef>DATABASE</span>::&#34;Posting Exch. Column Def&#34;,<span style=color:#ae81ff>104025</span>,TableSynchSetup<span style=color:#f92672>.</span>Mode::Copy<span style=color:#f92672>)</span>;  
+    SetTableSyncSetup<span style=color:#f92672>(</span><span style=color:#66d9ef>DATABASE</span>::&#34;Payment Export Data&#34;,<span style=color:#ae81ff>0</span>,TableSynchSetup<span style=color:#f92672>.</span>Mode::Force<span style=color:#f92672>)</span>;  
+<span style=color:#66d9ef>END</span>;
+</code></pre></div><p>Option definition is not encapsulated within the table. Arguments are grouped and we can add additional arguments without the need to change the signature.</p>
 <h1 id=downsides>Downsides</h1>
 <p>You need to create one more table</p>
 <p>Complex types can&rsquo;t be embedded as fields in tables (cannot have a record field type etc).</p>
@@ -291,18 +286,18 @@ END;</p>
 </div>
 <div id=navigation>
 <a class="nav nav-prev" href=/AL-Dev-Help/navpatterns/1-patterns/activity-log/ title="Activity Logs"><i class="fa fa-chevron-left"></i></a>
-<a class="nav nav-next" href=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/ title="Blocked Entity.md"><i class="fa fa-chevron-right"></i></a>
+<a class="nav nav-next" href=/AL-Dev-Help/navpatterns/1-patterns/blocked-entity/ title="Blocked Entity"><i class="fa fa-chevron-right"></i></a>
 </div>
 </div>
 <div style=left:-1000px;overflow:scroll;position:absolute;top:-1000px;border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px>
 <div style=border:none;box-sizing:content-box;height:200px;margin:0;padding:0;width:200px></div>
 </div>
-<script src=/AL-Dev-Help/js/clipboard.min.js?1635629553></script>
-<script src=/AL-Dev-Help/js/perfect-scrollbar.min.js?1635629553></script>
-<script src=/AL-Dev-Help/js/perfect-scrollbar.jquery.min.js?1635629553></script>
-<script src=/AL-Dev-Help/js/jquery.svg.pan.zoom.js?1635629553></script>
-<script src=/AL-Dev-Help/js/featherlight.min.js?1635629553></script>
-<script src=/AL-Dev-Help/js/modernizr.custom-3.6.0.js?1635629553></script>
-<script src=/AL-Dev-Help/js/relearn.js?1635629553></script>
+<script src=/AL-Dev-Help/js/clipboard.min.js?1635630941></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.min.js?1635630941></script>
+<script src=/AL-Dev-Help/js/perfect-scrollbar.jquery.min.js?1635630941></script>
+<script src=/AL-Dev-Help/js/jquery.svg.pan.zoom.js?1635630941></script>
+<script src=/AL-Dev-Help/js/featherlight.min.js?1635630941></script>
+<script src=/AL-Dev-Help/js/modernizr.custom-3.6.0.js?1635630941></script>
+<script src=/AL-Dev-Help/js/relearn.js?1635630941></script>
 </body>
 </html>
